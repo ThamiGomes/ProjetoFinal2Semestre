@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login</title>
+</head>
+<body>
+
+    <div class="place">
+
+
+        
+
+    <div id="id-div-aluno" class="loginAluno">
+
+        <div class="placeBtnVoltar placeBtnVoltarPositionAluno">
+        <button type="button" onclick="voltarPuxarAluno(), apagarDigito()" class="caminhoLoginBtn">
+        <img class="arrow-back" src="img/login/right-arrow.png" alt="Voltar">
+        </button>
+        </div>
+
+                                      
+        <div class="placeLogin positionAlunoPlaceLogin">
+            <div class="tituloLogin">
+                <h3>Login</h3>
+            </div>
+            
+            <div class="inserirUserNome">
+                <h6>Cpf ou email</h6>
+                <input type="text" id="digitoCpfEmail" class="digitarUser" placeholder="Digite aqui" >
+            </div>
+            <div class="espaco-log-senha"></div>
+            <div class="inserirUserSenha">
+                <h6>Senha</h6>
+               <p><input type="password" id="digitoSenha" class="digitarUser" placeholder="Insira sua senha"><input type="button" id="showPassword" value="show" class="button" /></p>
+            </div>
+            <div class="placeEsqSenha">
+               <a href=""><h6 class="esqueciSenha">Esqueci minha senha</h6></a>
+            </div>
+
+            <a href="index.html">
+            <div class="placeBtnEntrar">
+                <button type="button" onclick="digitarAluno()" class="btnEntrarLogin">
+                    <h6 id="btnEntrarDeVez">Entrar</h6>
+                </button>
+            </div>
+            </a>
+
+        </div>
+
+        <div class="imgLogarAluno">
+            <img id="studentImg" src="img/login/Nerd-amico.png" alt="Estudante">
+        </div>
+
+
+    </div>
+
+    <div id="id-div-escolha" class="loginEscolha">
+
+        <div class="placeTituloCaminho">
+            <h3>
+                Entre como:
+            </h3>
+        </div>
+
+        <button type="button" onclick="puxarAluno()" class="caminhoPrincipalLogin">
+            <div class="divCaminhoAluno efectDivLogin">
+            <div class="textplaceCaminho">
+                <h5>Aluno</h5>
+            </div>
+            <div class="imgAlunoCaminho">
+                <img class="imgCaminhoIconGif" id="imgCaminhoIconGifSizeAl" src="img/studentEstudando.gif" alt="Aluno">
+            </div>
+            </div>
+         </button>
+
+
+        <button type="button" onclick="puxarProfessor()" class="caminhoPrincipalLogin"> 
+            <div class="divCaminhoProfessor efectDivLogin">
+            <div class="textplaceCaminho">
+                <h5>Professor</h5>
+            </div>
+            <div class="imgAlunoCaminho">
+                <img class="imgCaminhoIconGif" id="imgCaminhoIconGifSizeProf" src="img/profTablet.gif" alt="Aluno">
+            </div>
+            </div>
+        </button>
+
+        
+        
+    </div>
+
+
+
+    <div id="id-div-professor" class="loginProfessor">
+        <div class="placeBtnVoltar placeBtnVoltarPositionProfessor">
+            <button type="button" onclick="voltarPuxarProfessor(), apagarDigito()" class="caminhoLoginBtn">
+            <img class="arrow-back" src="img/login/right-arrow.png" alt="Voltar">
+            </button>
+            </div>
+
+        <div class="placeLogin positionProfPlaceLogin">
+            <div class="tituloLogin">
+                <h3>Login</h3>
+            </div>
+            
+            <div class="inserirUserNome">
+                <h6>Cpf ou email</h6>
+                <input type="text" id="digitoCpfEmailPro" class="digitarUser" placeholder="Digite aqui">
+            </div>
+            <div class="espaco-log-senha"></div>
+            <div class="inserirUserSenha">
+                <h6>Senha</h6>
+                <input type="password" id="digitoSenhapPro" class="digitarUser" placeholder="Insira sua senha">
+            </div>
+            <div class="placeEsqSenha">
+               <a href=""><h6 class="esqueciSenha">Esqueci minha senha</h6></a>
+            </div>
+
+            <a href="index.html">
+            <div class="placeBtnEntrar">
+                <button type="button" class="btnEntrarLogin">
+                    <h6 id="btnEntrarDeVez">Entrar</h6>
+                </button>
+            </div>
+        </a>
+
+        </div>
+
+       
+       
+       
+       
+       
+
+        <div class="imgLogarProfessor">
+            <img id="studentImg" src="img/login/Webinar-amico.png" alt="Estudante">
+        </div>
+        
+        
+        
+        
+        
+
+    </div>
+    </div>
+
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>

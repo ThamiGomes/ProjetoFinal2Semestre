@@ -1,0 +1,255 @@
+
+  .container {
+    border: 2px solid #ff823eb7;
+    background-color: #FFEACA;
+    border-radius: 35px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 500px;
+    margin-left: 200px;
+    position: absolute;
+    margin-top: 50;
+  }
+  .container2 {
+    border: 2px solid #ff823eb7;
+    background-color:#FFEACA;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 500px;
+    margin-left: 200px;
+    position: absolute;
+    margin-top: 300px;
+  }
+  .container3 {
+    border: 2px solid #ff823eb7;
+    background-color: #FFEACA;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 500px;
+    margin-left: 200px;
+    position: absolute;
+    margin-top: 650px;
+  }
+  
+  /* Darker chat container */
+  .darker {
+    border-color: #ff823efd;
+    background-color:#ff823eb7;
+    margin-left: 600px;
+    position: absolute;
+    margin-top: 150px;
+    border-radius: 35px;
+  }
+   /* Darker chat container */
+   .darker2 {
+    border-color: #ff823efd;
+    background-color: #ff823eb7;
+    margin-left: 600px;
+    position: absolute;
+    margin-top: 470px;
+    border-radius: 35px;
+  }
+  /* Darker chat container */
+  .darker3 {
+    border-color: #ff823efd;
+    background-color: #ff823eb7;
+    margin-left: 600px;
+    position: absolute;
+    margin-top: 830px;
+    border-radius: 35px;
+  }
+  /* Clear floats */
+  .container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Style images */
+  .container img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  
+  /* Style the right image */
+  .container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+  }
+  
+  /* Style time text */
+  .time-right {
+    float: right;
+    color: #aaa;
+  }
+  
+  /* Style time text */
+  .time-left {
+    float: left;
+    color: #999;
+  }
+    
+  
+  
+
+
+.button{
+    border-radius:30px ;
+    margin-top: -40px;
+    border: 0;
+    margin-left:340px;
+    background-color: rgba(240, 248, 255, 0);
+    position: absolute;
+    
+}
+.button1{
+    width: 35px;
+    border-radius:50px ;
+    margin-top: -40px;
+    border: 0;
+    margin-left:200px;
+    background-color:#5CA7FD;
+    position: absolute;
+    
+}
+
+
+.input{
+
+border-radius: 35px;
+width: 60%;
+height: 35px;
+margin-left: 0px;
+background-color: rgba(128, 128, 128, 0.185);
+border-color: #FF833E;
+}
+
+#divBusca{
+  background-color:rgba(128, 128, 128, 0.185);
+  border:solid 1px;
+  border-radius:15px;
+  width:300px;
+  position: absolute;
+  margin-left: 100px;
+  margin: 30px;
+}
+
+#txtBusca{
+  float:left;
+  background-color:transparent;
+  padding-left:5px;
+  font-style:italic;
+  font-size:18px;
+  border:none;
+  height:32px;
+  width:260px;
+}
+.lupita{
+  width: 25px;
+  height: 25px;
+  
+}
+.linha {
+  width: 600px;
+  height: 795px;
+  margin-top: 3%;
+  overflow: scroll;
+  position: absolute;
+  
+}
+.cuadrito{
+  width: 1298px;
+  height: 77%;
+  overflow: scroll;
+  position: absolute;
+  right: 0%;
+  
+}
+
+.chat1{
+  border: 2px solid #dedede;
+    background-color:rgba(170, 170, 170, 0.308);
+    border-radius: 25px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 550px;
+    margin-left: 5px;
+    position: absolute;
+    margin-top: 50px;
+  }
+  .chat2{
+    border: 2px solid #dedede;
+      background-color:rgba(170, 170, 170, 0.308);
+      border-radius: 25px;
+      padding: 10px;
+      margin: 10px 0;
+      width: 550px;
+      margin-left: px;
+      position: absolute;
+      margin-top: 200px;
+    }
+    .chat3{
+      border: 2px solid #dedede;
+        background-color:rgba(170, 170, 170, 0.308);
+        border-radius: 25px;
+        padding: 10px;
+        margin: 10px 0;
+        width: 550px;
+        margin-left: 5px;
+        position: absolute;
+        margin-top: 350px;
+      }
+      .chat4{
+        border: 2px solid #dedede;
+          background-color:rgba(170, 170, 170, 0.308);
+          border-radius: 25px;
+          padding: 10px;
+          margin: 10px 0;
+          width: 550px;
+          margin-left: 5px;
+          position: absolute;
+          margin-top: 500px;
+        }
+        .chat5{
+          border: 2px solid #dedede;
+            background-color:rgba(170, 170, 170, 0.308);
+            border-radius: 25px;
+            padding: 10px;
+            margin: 10px 0;
+            width: 550px;
+            margin-left: 5px;
+            position: absolute;
+            margin-top: 650px;
+          }
+          .chat6{
+            border: 2px solid #dedede;
+              background-color:rgba(170, 170, 170, 0.308);
+              border-radius: 25px;
+              padding: 10px;
+              margin: 10px 0;
+              width: 550px;
+              margin-left: 5px;
+              position: absolute;
+              margin-top: 800px;
+            }
+
+
+
+
+
+
+.barrita{
+  position: absolute;
+  bottom: 2%;
+  right: 0%;
+  text-align: center;
+  padding-top: 30px;
+  width: 68.5%;
+  height: 7%;
+}

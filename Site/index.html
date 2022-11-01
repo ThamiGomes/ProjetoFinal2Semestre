@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/preloader.css" type="text/css">
+    <link rel="shortcut icon" href="img/seed.png" type="image/x-icon"> 
+
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+<script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <!-- FontAwesome 6.1.1 CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+   
+    <title>Home</title>
+  </head>
+  <body>
+    <!--Header-->
+ <header>
+  <div class="overlay"></div>
+  <div class="nav">
+    <ul class="tabs">
+
+      <a href="index.html">
+      <li class="tabs-item tab tab-home tab-is-active">
+        <div class="tab-circle"></div>
+        <img class="roxinho" src="img/home.png">            
+        <span class="tab-home">Home</span>
+      </li>
+      </a>
+
+      <a href="chat.html">
+      <li class="tabs-item tab tab-chat">
+        <div class="tab-circle"></div>
+        <i class="fa fa-comment tab-icon"></i>
+      
+        <span class="chat">Chat</span>
+      </li>
+      </a>
+      <a href="Tarefas.html">
+      <li class="tabs-item tab tab-tarefas">
+        <div class="tab-circle"></div>
+        <i class="fa fa-clipboard tab-icon"></i>
+        <span class="tarefas">Tarefas</span>
+      </li>
+    </a>
+
+    <a href="turmas.html">
+      <li class="tabs-item tab tab-sino ">
+        <div class="tab-circle"></div>
+        <img class="sino" src="img/sino.png">        
+        <span class="sino">Avisos</span>
+      </li>
+      </a>
+
+      <a href="chat.html">
+      <li class="tabs-item tab tab-calendar ">
+        <div class="tab-circle"></div>
+        <img class="calendario" src="img/calendar.png">            
+        <span class="calendario">Agenda</span>
+      
+      </li>
+      </a>
+
+
+      <a href="turmas.html">
+      <li class="tabs-item tab tab-team ">
+        <div class="tab-circle"></div>
+        <img class="roxinho" src="img/multiple-users-silhouette.png">        
+        <span class="tab-team">Equipes</span>
+      </li>
+      </a>
+      
+      <img class="perfil" src="img/girl.png">
+
+    </ul>
+  </div>
+
+  </header>
+
+  <!--  fim Header-->
+
+     <!-- início do preloader -->
+
+     <div class="loader_bg">
+      <div class="loader">
+          <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <h3 class="animate-charcter1" > Seed</h3>
+                </div>
+              </div>
+            </div>
+      </div>
+  </div>
+  
+
+  <!-- fim do preloader --> 
+
+
+    <!-- acessivel em libras -->
+
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+<style>
+  .access-button {
+      border-radius: 50px;
+      width: 45px;
+    float: right;
+  }
+    </style>
+
+    <!-- fim libras -->
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+    <!-- Comparação -->
+
+    <center>
+      <div class="img-comp-container align-comparation wow">
+        <div class="img-comp-img">
+          <img src="img/" style="width: 50vw; height: 50vh" />
+        </div>
+        <div class="img-comp-img img-comp-overlay">
+          <img src="img/" style="width: 50vw; height: 50vh"/>
+        </div>
+      </div>
+    </center>
+   
+    
+    <!-- fim Comparação -->
+
+
+
+    <!--Grid-->
+
+     <div class="personaPlace"> 
+      <div class="cardPerso cardPersoImg1 item2 CardPosition1" > <!--Item 2-->
+
+          <div class="nomePersonagem">
+              <h3>Entrege suas atividades de forma mais rápida</h3>
+              <p class="paraPerso">
+                Aprendizagem online pensada para a vida real
+                Avance na sua jornada criativa sem parar sua vida. AS aulas online ajudam você a encontrar inspiração que se encaixa na sua rotina.
+              </p>
+          </div>
+      </div>
+
+      <div class="cardPerso cardPersoImg2 item3" > <!--Item 3-->
+
+          <div class="nomePersonagem">
+              <h3></h3>
+              <p class="paraPerso">oieeeeeeeeeeeeeee</p>
+          </div>
+      </div>
+
+      <div class="cardPerso cardPersoImg3 item4 CardPosition2"  > <!--Item 4-->
+
+          <div class="nomePersonagem">
+              <h3>   </h3>
+              <p class="paraPerso">oiiiiiiiiiiiii</p>
+          </div>
+      </div>
+    
+  </div>
+<br><br><br>
+     
+<section  class="sessao-tarefas">
+  <div class="tarefas" data-anime="left">
+    <h2>Agende suas tarefas</h2>
+
+    <p>Aprendizagem online pensada para a vida real
+      Avance na sua jornada criativa sem parar sua vida. AS aulas online ajudam você a encontrar inspiração que se encaixa na sua rotina.</p>
+
+      <a href="Tarefas.html" class="btn btn-white btn- animate" style="margin-top:20px; margin-left: -80px;" >Tarefas</a>
+  </div>
+
+
+<div>
+  <video src="img/Online calendar.mp4" loop="true" autoplay="autoplay"  muted data-anime="top" class="home-img"></video>
+</div>
+
+</section>
+<div  data-anime="top">
+  <h2 class="chat">Se reúna e converse com seus colegas e professores</h2>
+
+      
+  <p class="chat"  data-anime="left" >Aprendizagem online pensada para a vida real
+    Avance na sua jornada criativa sem parar sua vida. AS aulas online ajudam você a encontrar inspiração que se encaixa na sua rotina.</p>
+
+    <a href="chat.html"  class="btn btn-white btn- animate" style="margin-left: 1520px;  background-color: #FFBD59;"  >Chat</a>
+</div>
+
+
+<div>
+<img src="img/Remote meeting-bro.png" data-anime="rigth" class="chat">
+</div>
+
+
+
+<py-script>
+
+  
+  print('Digite os Dados solicitados para efetuar o cadastro ')
+  print()
+  nome = input("Digite o seu nome : ")
+  idade = input('Digite sua idade : ')
+  dt_nas = input("Digite sua data de nascimento: ")
+  end = input('Digite seu endereço : ')
+  tel = input('Digite seu telefone: ')
+  
+  print()
+  
+  print('Os Dados Cadastrados são:')
+  print('Nome: ' + str (nome))
+  print("Idade: " , int (idade))
+  print("Data de Nascimento : " , int (dt_nas))
+  print('Endereço: ' + str(end))
+  print('Telefone: ' , int (tel))
+  
+  print("Parabens! Cadastro efetuado com sucesso!  :)")
+  
+
+</py-script>
+
+  
+
+
+
+
+ <!-- Footer -->
+
+<footer class="footer" data-anime="left">
+  <hr>
+  <div class="container">
+      
+            <div class="col-md-12 text-center" >
+              <h5 class="animate-charcter" > Seed</h5>
+            </div>
+            <div class="row">
+          <div class="footer-col" >
+              <h4>Ajuda</h4>
+              <ul>
+                  <li><a href="faleconosco.html">Fale Conosco</a></li>
+                  <li><a href="politica.html">Politica de Privacidade</a></li>
+                  <li>  <a href="#">Sobre nós</a></li>
+                  <li><a href="#">Informações Gerais</a></li> 
+                  <li> <a href="#">Fale Conosco</a></li>
+                  <li><a href="#">Políticas de Privacidade</a></li>
+                  <li><a href="#">Mapa do Site</a></li>
+                  
+
+              </ul>
+          </div>
+
+          <div class="footer-col" >
+              <h4>Autor</h4>
+              <ul>
+                  <li><a>Aline Batista</a></li>
+              </ul>
+          </div>
+
+          <div class="footer-col">
+              <h4>Redes Sociais</h4>
+              <div class="redes">
+                  <a href=""><i class="fab fa-facebook-f"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                  <a href=""><i class="fab fa-twitter"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+ 
+
+</footer>
+ <!--  Fim Footer -->
+
+
+
+ <!-- Scripts -->
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+    integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  </body>
+  <script src="js/menu.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/comparacao.js"></script>
+
+
+   <!--inicio Script Preloader-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    setTimeout(function(){
+        $('.loader_bg').fadeToggle();
+    }, 1500);
+    
+</script>
+ <!--Fim Script Preloader-->
+</html>
