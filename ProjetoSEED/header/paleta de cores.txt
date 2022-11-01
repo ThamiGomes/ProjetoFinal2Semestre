@@ -1,4 +1,0 @@
-Vermelho: #FF5757
-laranja: #FFBD59
-verde: #C9E265
-roxo: #CB6CE6
