@@ -48,7 +48,7 @@
  /*FOOTER*/
   /*Atributos basicos que o footer irá ter*/
   .footer{
-    background-color:rgb(253, 253, 253);
+    background-color:white;
     padding: 70px 0;
     bottom: 0;
     width: 100%;
