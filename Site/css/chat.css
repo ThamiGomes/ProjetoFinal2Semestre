@@ -228,10 +228,18 @@
   margin-top: 350px;
 }
 .chatcard{
-  width: 60px;
+  width: 65px;
   margin-left: -45%;
   position: absolute;
-  border-radius: 50%;
+  border-radius: 60%;
+  margin-top: -1%;
+}
+.chatcard1{
+  width: 65px;
+  margin-left: -47%;
+  position: absolute;
+  border-radius: 60%;
+  margin-top: -1%;
 }
 .chat4{
  border: 2px solid #dedede;
@@ -243,6 +251,13 @@
           margin-left: 5px;
           position: absolute;
           margin-top: 500px;
+        }
+        .chataline{
+          width: 60px;
+          margin-left: -45%;
+          position: absolute;
+          border-radius: 50%;
+          margin-top: -1%;
         }
         .chat5{
           border: 2px solid #dedede;
@@ -271,7 +286,7 @@
   right: 0%;
   text-align: center;
   padding-top: 30px;
-  width: 68.5%;
+  width: 68%;
  
 }
 .input{

@@ -1,0 +1,328 @@
+ 
+ @import url('https://fonts.googleapis.com/css?family=Poppins');
+
+ *{
+     font-family: Poppins;
+ }
+
+body{
+    background-color: white;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    font-size:17px ;
+    font-family: 'Poppins';
+}
+
+
+.sessao-home{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;    
+}
+
+
+/*imagens e Videos*/
+.home-img{
+    height: 550px;
+    width: 600px;
+    margin-left: 800px;
+    margin-top: 750px;
+}
+
+
+/*Botões*/
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+    background-color: #009ffb;
+    margin-top: 300px;
+    left: 120px;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.tarefas{
+    background-color: #cffcff7c;
+    height: 280px;
+    width: 40%;
+    margin-left: 50px;
+    margin-top: 850px;
+    position: absolute;
+    text-align: left;
+    padding-left: 50px;
+    border-radius: 50px;
+
+
+}
+
+h2.tarefas{
+    width: 40%;
+    margin-top:100px;
+    left: 50px;
+    position: absolute;
+}
+
+p.tarefas{
+    width: 40%;
+    margin-top:150px;
+    left: 150px;
+    position: absolute;
+    justify-content: left;
+    text-align: left;
+
+}
+
+h2.chat{
+    width: 40%;
+    margin-top:100px;
+    left: 1000px;
+    position: absolute;
+}
+
+p.chat{
+    width: 40%;
+    margin-top:200px;
+    left: 1000px;
+    position: absolute;
+    justify-content: left;
+    text-align: right;
+
+}
+
+img.chat{
+    width: 600px;
+    margin-right: 900px;
+}
+
+
+  
+/* Animação  Scrool */
+
+[data-anime] {
+    opacity: 0;
+    transition: .3s;
+  }
+  
+  [data-anime="left"] {
+    transform: translate3d(-50px, 0, 0);
+  }
+  
+  [data-anime="right"] {
+    transform: translate3d(50px, 0, 0);
+  }
+  
+  [data-anime="top"] {
+    transform: translate3d(0, -50px, 0);
+  }
+  
+  [data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+  }
+
+/* Grid */
+
+  
+.personaPlace{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 7% 75%;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    padding-top: 2em;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    margin-top:5px;
+
+
+}
+
+.item1{
+    grid-column: 1/4;
+   
+}
+
+.item2{
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+.item3{
+    grid-column-start: 2;
+    grid-row-start: 2;
+
+}
+.item4{
+    grid-column-start: 3;
+    grid-row-start: 2;
+
+}
+
+.tituloPerso{
+    margin: auto;
+
+    width: 100%;
+    text-align: center;
+}
+
+.tituloPerso h2{
+    font-size: 2.5em;
+}
+
+.cardPerso2{
+    position: relative;
+    margin: auto;
+    width: 60%;
+    height: 65%;
+    box-shadow: 0 6px 8px 0 #e6cff7, 0 6px 20px 0 rgba(46, 39, 39, 0.342);
+    border-radius: 2%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+.cardPerso1{
+    position: relative;
+    margin: auto;
+    width: 60%;
+    height: 65%;
+    box-shadow: 0 6px 8px 0 #58a6ff8a, 0 6px 20px 0 rgba(46, 39, 39, 0.342);
+    border-radius: 2%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+.cardPerso{
+    position: relative;
+    margin: auto;
+    width: 60%;
+    height: 65%;
+    box-shadow: 0 6px 8px 0 #ec964e, 0 6px 20px 0 rgba(46, 39, 39, 0.342);
+    border-radius: 2%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+.cardPersoImg1{
+    background-image: url(../img/BD.png);
+}
+
+.cardPersoImg2{
+    background-image: url(../img/mec.png);
+ 
+}
+
+.cardPersoImg3{
+    background-image: url(../img/Collab-cuate.png);
+}
+
+.nomePersonagem{
+    position: absolute;
+    top: 85%;
+    text-align: center;
+    margin: auto;
+    font-size: 2em;
+    color:white;
+
+/*    filter: drop-shadow(0px 10px 1px);*/
+
+    width: 100%;
+    height: 100%;
+    transition: 0.7s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.178);
+
+
+}
+
+.nomePersonagem:hover{
+    transition: 0.8s ease;
+    transform: translateY(-80%);
+
+}
+
+.CardPosition1{
+    left: 30%;
+}
+.CardPosition2{
+    right: 30%;
+}
+
+.nomePersonagem h3{
+    font-size: 20px;
+    padding-top: 0.2em;
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0));
+    cursor: pointer;
+}
+
+.paraPerso{
+    padding-top: 1em;
+    padding-left: 0.45em;
+    padding-right: 0.45em;
+    text-align: left;
+    color: #ffffff;
+    font-size: 20px !important;
+}
