@@ -55,6 +55,10 @@ body{
     position: relative;
     overflow: hidden;
     /* transform: scale(1.25); */
+    margin-top: 50px;
+    margin-left: 500px;
+    width: 800px;
+    height: 500px;
 }
 
 .light .calendar {
