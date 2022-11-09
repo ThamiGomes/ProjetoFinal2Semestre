@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+    position: fixed;
+}
+i{
+        margin-top:5px;
+
+}
+span.tarefas{
+        left:03px;
+        top:5px;
+}
+span.chat{
+        left:09px;
+        top:5px;
+}
+div.icone{
+    height: 830px;
+    background-color: rgb(243, 239, 239);
+    width: 250px;
+
+}
+img.icone{
+    width: 200px;
+    margin-top: 30px;
+    margin-left: -10px;
+}
+.vertical-menu {
+    width: 200px; /* Set a width if you like */
+    margin-left: 20px;
+  }
+  .vertical-menu a {
+    background-color: rgb(243, 239, 239); /* Grey background color */
+    color: rgb(5, 5, 5); /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+    cursor: pointer;
+    font-family: "Poppins";
+    border-radius: 10px;
+  }
+  
+  .vertical-menu a:hover {
+    background-color: rgba(177, 177, 177, 0.61); /* Dark grey background on mouse-over */
+
+}
+  
+  .vertical-menu a.active {
+    background-color: #7b52bd; /* Add a green color to the "active/current" link */
+    color: white;
+  }
+
+
+
+div.principal{
+    height:655px;
+    background-color: rgb(255, 255, 255);
+    width: 1660px;
+    position: relative;
+    left: 101%;
+    top: -390px;
+    box-shadow:  0px 0px 7px 1px rgba(0,0,0,0.7) !important; 
+    overflow: scroll;
+}
+
+
+
+
+  .horizontal-menu {
+    background-color: #e0d0fa;
+    position: fixed;
+    z-index: 2000 !important;
+    top: 110px;
+    left: 252px;
+    width: 1670px; /* Set a width if you like */
+    height: 110px;
+    box-shadow: 0 0 7px 0px #000;
+  clip-path: inset(0px -15px 0px -15px);
+  }
+  .horizontal-menu a {
+    margin-right: 50px;
+    background-color: rgb(243, 239, 239); /* Grey background color */
+    color: rgb(5, 5, 5); /* Black text color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+    cursor: pointer;
+    font-family: "Poppins";
+    border-radius: 10px;
+    margin-bottom: 100px;
+    position: relative;
+    top: 30%;
+    left: -540px;
+  }
+  
+  .horizontal-menu a:hover {
+    background-color: rgba(177, 177, 177, 0.61);
+    text-decoration: underline; 
+    transition: 0.5s;
+
+}
+  
+  .horizontal-menu a.active {
+    background-color: #7b52bd; /* Add a green color to the "active/current" link */
+    color: white;
+    transition: 0.9s;
+
+
+  }
+
+  .quadro{
+    overflow: scroll;
+    background-color: rgb(110, 97, 80);
+    width: 500px;
+  }
+div.quadro{
+  overflow: scroll;
+  background-color: rgb(110, 97, 80);
+  width: 500px;
+}
+
+  .container {
+    border: 2px solid #ff823eb7;
+    background-color: #dddcdb;
+    border-radius: 35px;
+    padding: 10px;
+    margin:30px 0;
+    width: 600px;
+    margin-left: 200px;
+    position: absolute;
+    margin-top: 50;
+  }
+  .container2 {
+    border: 2px solid #ddddddb7;
+    background-color: rgb(243, 239, 239);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 500px;
+    margin-left: 200px;
+    position: absolute;
+    margin-top: 40px;
+  }
+  .img1{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-left: -650px;
+  }
+
+  img.img2{
+  margin-top:20px;
+  width: 220px;  
+  height: 50px;
+  }
+  .container2 p{
+    color: crimson;
+    font-family: "Poppins";
+    font-weight: bolder;
+    margin-top: -50px;
+  }
+
+  .container2 span{
+    color: rgb(0, 0, 0);
+    font-family: "Poppins";
+    font-weight: normal;
+    margin-top: 30px;
+  }
+  p.nome{
+    color: rgb(71, 71, 71);
+    font-weight: normal;
+    margin-left:-650px;
+    margin-top: 25px;
+    font-size: 12px;
+
+  }
+  .container3 {
+    border: 2px solid #ddddddb7;
+    background-color: rgb(243, 239, 239);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 500px;
+    margin-left: 200px;
+    position: absolute;
+    margin-top: 290px;
+  }
+  .container4 {
+    border: 2px solid #ddddddb7;
+    background-color: rgb(243, 239, 239);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 500px;
+    margin-left: 200px;
+    position: absolute;
+    margin-top: 420px;
+  }
+
+  .container5 {
+    border: 2px solid #ddddddb7;
+    background-color: rgb(243, 239, 239);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 500px;
+    margin-left: 200px;
+    position: absolute;
+    margin-top: 580px;
+  }
+
+  .container6 {
+    border: 2px solid #ddddddb7;
+    background-color: rgb(243, 239, 239);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 720px 200px 100px 200px;
+    width: 500px;
+    position: absolute;
+  }
+  
+  
+  /* Clear floats */
+  .container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Style images */
+  .container img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  
+  /* Style the right image */
+  .container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+  }
+  
+  /* Style time text */
+  .time-right {
+    float: right;
+    color: #aaa;
+  }
+  
+  /* Style time text */
+  .time-left {
+    float: left;
+    color: rgb(187, 187, 187);
+  }
+    
+
+div.fundoinput{
+  background-color: #ffffff;
+  margin-top: 654px;
+  position: fixed;
+  left: 253px;
+  width: 1670px; /* Set a width if you like */
+  height: 89px;
+  box-shadow: 0 0 7px 0px #000;
+  clip-path: inset(0px -15px 0px -15px);
+
+
+}
+
+input.fundoinput{
+    width: 450px;
+    height: 25px;
+    position: relative;
+    margin-left: -1000px;
+    top: 30px;
+    border-radius: 0.5em;
+    border-color: black;
+    padding-left: 10px;
+    z-index: 2000 !important;
+
+}
+.enviar{
+  width: 45px;
+  height: 25px;
+  margin-top: 32px;
+  left: 600px;
+  background-color: #7b52bd;
+  position: absolute;
+  color: white;
+  border-radius: 100px;
+  border: none;
+
+}
+
+.enviar:hover{
+  width: 45px;
+  height: 25px;
+  margin-top: 35px;
+  left: 600px;
+  background-color: #cbbde2;
+  position: absolute;
+  transition: 0.3s;
+  color: black;
+}
+
+
+
+.container {
+  border: 2px solid #fff;
+  padding: 30px 40px;
+  width: 40%;
+  min-width: 500px;
+ 
+}
+
+.new-task-container {
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 5px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  display: flex;
+ 
+}
+
+.new-task-container input {
+  flex: 3;
+  font-size: 1rem;
+  border: 2px solid #d1d3d4;
+  border-radius: 5px;
+  padding: 12px;
+  font-weight: 500;
+  
+}
+
+.new-task-container input:focus {
+  outline: none;
+  border-color: #41b883;
+}
+
+.new-task-button {
+  flex: 1;
+  border-radius: 5px;
+  font-weight: 500;
+  height: 100%;
+  font-size: 1rem;
+  border: none;
+  background-color: #41b883;
+  color: #fff;
+  padding: 12px;
+  margin-left: 12px;
+  cursor: pointer;
+  
+}
+
+.tasks-container {
+  background-color: #fff;
+  padding: 30px 20px;
+  margin-top: 60px;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+  margin-top: 6px;
+  margin-top: 25px;
+}
+
+.task-item i {
+  background-color: #41b883;
+  color: #fff;
+  padding: 12px;
+  border-radius: 5px;
+  
+}
+
+.task-item i:hover {
+  cursor: pointer;
+}
+
+/* Utilities */
+.error {
+  border: 2px solid red !important;
+}
+
+.error::placeholder {
+  color: red;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.h99{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 3.5em;
+  color:#717272
+}

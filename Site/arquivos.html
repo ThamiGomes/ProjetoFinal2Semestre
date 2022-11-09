@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/menu.css" />
-    <link rel="stylesheet" href="css/dev.css" />
+    <link rel="stylesheet" href="css/arquivos.css" />
     <!-- FontAwesome 6.1.1 CDN -->
     <link
       rel="stylesheet"
@@ -107,74 +107,31 @@
 
 
      <!--Conteudo pagina -->
-    <div class="icone">
-     <div>
-      <img src="img/dev/devicone.png" class="icone">
-      <div class="vertical-menu">
-        <a href="#" class="active">Home</a>
-        <a href="#">PWFE</a>
-        <a href="#">PWBE 2</a>
-        <a href="#">IDM</a>
-        <a href="#">BANCO DE DADOS</a>
-      </div>
-    </div>
+    <!--inicio tarefas-->
+<h1> Anote suas atividades a fazer aqui:</h1> 
+<h99>"estipule datas para uma melhor perfomance"</h99>
+<div class="container">
+  <div class="new-task-container">
+    <input
+      type="file" class="new-task-input" placeholder="Tarefa para ser feita..."
+    />
 
-  <div class="principal">
-
-    <div class="horizontal-menu">
-      <a href="#" class="active">Comunicados</a>
-      <a href="arquivos.html">Arquivos</a>
-    </div>
-
-  
-    <div class="quadro">
-
-      <div class="container2">
-        <img src="img/dev/mayara.jpg" alt="Avatar" class="img1">
-        <p>AVISOS FRONT-END</p>
-        <p class="nome">Mayara Ferreira</p>
-
-        <span>As atividades FORMATVAS devem ser entregues dia 27/11</span>
-        <br>
-        <span>As recomendações estão no documento abaixo</span>
-        <img src="img/dev/DOCS.jpg" alt="" class="img2">
-        <span class="time-right">11:02</span>
-      </div>
-
-    <div class="container3">
-      <img src="/w3images/.jpg" alt="Avatar">
-      <p>Hello. How are you today?</p>
-      <span class="time-right">11:00</span>
-    </div>
-
-    <div class="container4">
-      <img src="/w3images/.jpg" alt="Avatar">
-      <p>Hello. How are you today?</p>
-      <span class="time-right">11:00</span>
-    </div>
-
-    <div class="container5">
-      <img src="/w3images/.jpg" alt="Avatar">
-      <p>Hello. How are you today?</p>
-      <span class="time-right">11:00</span>
-    </div>
-    
-    <div class="container6">
-      <img src="/w3images/.jpg" alt="Avatar">
-      <p>Hello. How are you today?</p>
-      <span class="time-right">11:00</span>
-    </div>
-
-  </div>
-    
-  <div class="fundoinput">
-      <input type="text" class="fundoinput" placeholder="Digte uma mensagem.">
-      <button type="button" class="enviar"> enviar</button>
-
-  </div>
-     
+    <button class="new-task-button">Adicionar</button>
   </div>
 
+  <div class="tasks-container"></div>
+</div>
+
+<script
+  src="https://kit.fontawesome.com/f9e19193d6.js"
+  crossorigin="anonymous"
+></script>
+<script src="js/tarefas.js"></script>
+<!--fim conteúdo-->
+
+
+
+ <!-- Scripts -->
 
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
@@ -185,5 +142,15 @@
   </body>
   <script src="js/menu.js"></script>
   <script src="js/index.js"></script>
+   <!--inicio Script Preloader-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    setTimeout(function(){
+        $('.loader_bg').fadeToggle();
+    }, 1500);
+    
+</script>
 
+
+ <!--Fim Script Preloader-->
 </html>
