@@ -99,6 +99,7 @@
     color: rgb(0, 0, 0);
     font-weight: 300;
     display: block;
+    text-align: justify;
     
    
   }
@@ -112,6 +113,7 @@
     font-weight: 500;
     margin-bottom: 20px;
     position: relative;
+    text-align: justify;
     
   }
 
@@ -146,6 +148,7 @@
   background-color: rgb(56, 55, 55);
   border-radius: 50%;
   color: rgb(252, 241, 241);
+ 
   
   }
   
