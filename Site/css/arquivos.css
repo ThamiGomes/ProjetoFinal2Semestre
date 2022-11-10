@@ -112,13 +112,6 @@ div.principal{
 
   }
 
-  .quadro{
-    overflow: scroll;
-    background-color: rgb(255, 255, 255);
-    width: 1500px;
-    margin-left: 90px;
-  }
-
   button.quadro{
     font-family: "Poppins";
     color: #fff;
@@ -135,26 +128,16 @@ div.principal{
   }
 
   button.quadro:hover{
-    font-family: "Poppins";
-    color: rgb(0, 0, 0);
-    margin-top:40px;
-    margin-left: -1200px;
-    font-size: 17px;
-    font-weight: lighter;
-    width: 100px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 15px;
     transition: 0.2s;
     background-color: #c5afe9;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 7px 6px -3px, rgb(0, 0, 0) 0px 4px 6px -2px;   
     cursor: pointer;
-
   }
 div.quadro{
   overflow: scroll;
   background-color: rgb(255, 255, 255);
   width: 1500px;
+  margin: auto;
 }
 
 .caixa{
@@ -163,8 +146,6 @@ div.quadro{
 .abriropcoes{
   background-color: #ffffff;
   margin-left: 10px;
-
-  
 }
 .container {
   border: 2px solid #fff;
@@ -179,9 +160,6 @@ div.quadro{
   padding: 30px 40px;
   width: 800px;
   min-width: 500px;
-  margin-top: 50px;
-
- 
 }
 
 .container3 {

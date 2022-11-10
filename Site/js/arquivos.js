@@ -37,9 +37,9 @@ function caixafechar(){
 
 aux2 = 0;
 function arquivo(){
-    var id_container = document.getElementById('container');
-    id_container.classList.remove("container");
-    id_container.classList.add("container2");
+    var id_container = document.querySelectorAll('.container');
+    id_container.style.display = 'visible';
+
 
     console.log('oi');
 

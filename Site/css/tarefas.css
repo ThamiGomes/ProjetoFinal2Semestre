@@ -1,9 +1,9 @@
-.container {
+.container01 {
     border: 2px solid #fff;
     padding: 30px 40px;
     width: 40%;
     min-width: 500px;
-   
+    margin: auto;
   }
   
   .new-task-container {
@@ -27,7 +27,7 @@
   
   .new-task-container input:focus {
     outline: none;
-    border-color: #41b883;
+    border-color: #D73379;
   }
   
   .new-task-button {
@@ -37,7 +37,7 @@
     height: 100%;
     font-size: 1rem;
     border: none;
-    background-color: #41b883;
+    background-color: #D73379;
     color: #fff;
     padding: 12px;
     margin-left: 12px;
@@ -65,7 +65,7 @@
   }
   
   .task-item i {
-    background-color: #41b883;
+    background-color: #D73379;
     color: #fff;
     padding: 12px;
     border-radius: 5px;
