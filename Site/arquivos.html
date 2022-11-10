@@ -132,10 +132,12 @@
       
         <!--inicio tarefas-->
         <button type="button" class="quadro" onclick="caixa(), caixafechar()"> NOVO +</button> 
-            <select id="opcoes" class="caixa">
-              <option id="pasta" onclick="pasta(), pastafechar()">pasta </option>
-              <option id="arquivo"  onclick="arquivo(), arquivofechar()"> arquivo </option>
-            </select>
+
+        <button type="button" class="quadro2" id="pasta" onclick="pasta(), pastafechar()"> pasta</button>   
+        <button type="button" class="quadro3" id="arquivo"  onclick="arquivo(), arquivofechar()"> arquivo</button> 
+
+
+            
             
             <div class="container" id="container">
               <div class="new-task-container">
@@ -157,7 +159,7 @@
               <div class="new-task-container">
         
                 <input
-                type="file" class="new-task-input" placeholder="Tarefa para ser feita..."
+                type="text" class="new-task-input" placeholder="Tarefa para ser feita..."
               />
             
                 <button class="new-task-button">Adicionar</button>

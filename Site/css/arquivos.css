@@ -113,7 +113,7 @@ div.principal{
   }
 
   .quadro{
-    overflow: scroll;
+    overflow: hidden;
     background-color: rgb(255, 255, 255);
     width: 1500px;
     margin-left: 90px;
@@ -128,9 +128,12 @@ div.principal{
     font-weight: lighter;
     background-color: #7b52bd;
     width: 100px;
+    height: 50px;
+    border: rgba(0, 0, 0, 0);
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 15px;
+    overflow: hidden;
 
   }
 
@@ -143,6 +146,8 @@ div.principal{
     font-weight: lighter;
     width: 100px;
     padding-top: 5px;
+    border: rgba(0, 0, 0, 0);
+
     padding-bottom: 5px;
     border-radius: 15px;
     transition: 0.2s;
@@ -152,7 +157,7 @@ div.principal{
 
   }
 div.quadro{
-  overflow: scroll;
+  overflow: hidden;
   background-color: rgb(255, 255, 255);
   width: 1500px;
 }
@@ -180,7 +185,6 @@ div.quadro{
   width: 800px;
   min-width: 500px;
   margin-top: 50px;
-
  
 }
 
