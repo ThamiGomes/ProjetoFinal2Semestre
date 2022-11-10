@@ -53,7 +53,7 @@ function arquivo(){
         string='ímpar';
     }
 
-    console.log('teste2');
+    console.log('fdgdfg');
     aux2 += 1;
 
 }
@@ -68,13 +68,13 @@ function arquivofechar(){
         id_container.classList.add("container");
 
     }
-    console.log('teste3');
+    console.log('hhhh');
 
 }
 
 aux3 = 0;
 function pasta(){
-    var id_container3 = document.getElementById('container');
+    var id_container3 = document.getElementById('container3');
     id_container3.classList.remove("container");
     id_container3.classList.add("container3");
 
@@ -96,7 +96,7 @@ function pasta(){
 }
 
 function pastafechar(){
-    var id_container3 = document.getElementById('container');
+    var id_container3 = document.getElementById('container3');
 
     if (string3 == 'ímpar'){
         console.log(string);
@@ -238,3 +238,4 @@ refreshTasksUsingLocalStorage();
 addTaskButton.addEventListener("click", () => handleAddTask());
 
 inputElement.addEventListener("change", () => handleInputChange());
+
