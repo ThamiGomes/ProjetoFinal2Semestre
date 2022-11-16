@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&subset=cyrillic");
 
-
-
 body{
     background-color: white;
     align-items: center;
@@ -51,12 +49,12 @@ body{
 }
 
 .tab-is-active {
-    max-width: 100px;
+    max-width: 120px;
     box-shadow: 7px 7px 15px rgba(124, 124, 124, 0.096);
 }
 
 .tab:hover {
-    max-width: 100px;
+    max-width: 120px;
     box-shadow: 7px 7px 15px rgba(124, 124, 124, 0.096);
     position: relative;
 }

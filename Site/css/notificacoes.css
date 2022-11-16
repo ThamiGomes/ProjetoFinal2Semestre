@@ -10,7 +10,8 @@ body{
     height: 100%;
     margin: auto;
 
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(228, 228, 228);
+    overflow: hidden;
 }
 .lastNoti h3{
     position: absolute;
@@ -40,7 +41,11 @@ body{
     width: 82%;
     height: 80%;
 
-    background-color: #ffffff;
+    overflow: scroll;
+    box-shadow: 0em 0em 0.4em 0.1em #858585;
+
+
+    background-color: #f2f9ff;
 }
 
 .iconFilter{
@@ -62,10 +67,156 @@ body{
 
 /*Noti1*/
 .noti1{
+    position: absolute;
+    top: 0%;
     display: grid;
-    grid-template-columns: 10% 30% 30% 5% 10%;
-    grid-template-rows: 30% 50% 20%;
+    grid-template-columns: 10% 30% 30% 5% 10% 15%;
+    grid-template-rows: 40% 30% 5%;
+
+    width: 100%;
+    height: 18%;
 }
+.noti2{
+    position: absolute;
+    top: 21%;
+    display: grid;
+    grid-template-columns: 10% 30% 30% 5% 10% 15%;
+    grid-template-rows: 40% 30% 5%;
+
+    width: 100%;
+    height: 18%;
+
+}
+.comp2-not2{
+    grid-column-start: 2;
+    grid-row-start: 1;
+
+    margin: auto;
+
+    padding-right: 5em;
+
+    font-size: 2em;
+}
+.comp2-not2 h5{
+    margin: auto;
+}
+.noti3{
+    position: absolute;
+    top: 42%;
+    display: grid;
+    grid-template-columns: 10% 30% 30% 5% 10% 15%;
+    grid-template-rows: 40% 30% 5%;
+
+    width: 100%;
+    height: 18%;
+}
+.noti4{
+    position: absolute;
+    top: 63%;
+    display: grid;
+    grid-template-columns: 10% 30% 30% 5% 10% 15%;
+    grid-template-rows: 40% 30% 5%;
+
+    width: 100%;
+    height: 18%;
+}
+.noti5{
+    position: absolute;
+    top: 84%;
+    display: grid;
+    grid-template-columns: 10% 30% 30% 5% 10% 15%;
+    grid-template-rows: 40% 30% 5%;
+
+    width: 100%;
+    height: 18%;
+}
+.noti6{
+    position: absolute;
+    top: 105%;
+    display: grid;
+    grid-template-columns: 10% 30% 30% 5% 10% 15%;
+    grid-template-rows: 40% 30% 5%;
+
+    width: 100%;
+    height: 18%;
+}
+.noti7{
+    position: absolute;
+    top: 126%;
+    display: grid;
+    grid-template-columns: 10% 30% 30% 5% 10% 15%;
+    grid-template-rows: 40% 30% 5%;
+
+    width: 100%;
+    height: 18%;
+}
+.lineSep1{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+
+    width: 60%;
+    height: 0.05em;
+    margin: auto;
+
+    background-color: #5CA7FD;
+}
+.lineSep2{
+    position: absolute;
+    top: 41%;
+    left: 20%;
+
+    width: 60%;
+    height: 0.05em;
+    margin: auto;
+
+    background-color: #5CA7FD;
+}
+.lineSep3{
+    position: absolute;
+    top: 62%;
+    left: 20%;
+
+    width: 60%;
+    height: 0.05em;
+    margin: auto;
+
+    background-color: #5CA7FD;
+}
+.lineSep4{
+    position: absolute;
+    top: 83%;
+    left: 20%;
+
+    width: 60%;
+    height: 0.05em;
+    margin: auto;
+
+    background-color: #5CA7FD;
+}
+.lineSep5{
+    position: absolute;
+    top: 104%;
+    left: 20%;
+
+    width: 60%;
+    height: 0.05em;
+    margin: auto;
+
+    background-color: #5CA7FD;
+}
+.lineSep6{
+    position: absolute;
+    top: 125%;
+    left: 20%;
+
+    width: 60%;
+    height: 0.05em;
+    margin: auto;
+
+    background-color: #5CA7FD;
+}
+
 .comp1-not1{
     grid-column-start: 1;
     grid-column-end: 1;
@@ -100,33 +251,46 @@ body{
 .comp4{
     grid-column-start: 5;
     grid-row-start: 2;
+    grid-row-end: 5;
+}
+.comp5{
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+.comp6{
+    grid-column-start: 6;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+p{
+    margin: 0 auto;
 }
 
 
-
-
 .imgPerfil{
-    width: 60%;
+    width: 75%;
+    height: 120px;
     margin: auto;
-    border-radius: 50%;
+    border-radius: 20%;
     filter: drop-shadow(0em 0em 0.2em #fff);
 }
 .separador{
     grid-column-start: 4;
     grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
 
     width: 1%;
-    height: 91px;
+    height: 160%;
     margin: auto;
     background-color: #adadad;
 }
 
 .checar{
     margin: auto;
-    width: 35%;
-    height: 100%;
+    width: 40%;
+    height: 60%;
 
 }
 .AvisoCheck:hover{
@@ -142,11 +306,67 @@ body{
 }
 
 .AvisoCheck{
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 135%;
     margin: auto;
     cursor: pointer;
     border-radius: 50%;
+    transition: 0.5s linear;
     border: 0.01em solid rgb(80, 80, 80);
     background-color: rgb(255, 255, 255);
+}
+
+.dataNotif{
+    text-align: end;
+    margin: auto;   
+    color: #858585;
+}
+
+.redirect{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.ir{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 10% 70%;
+    position: absolute;
+    left: 18%;
+    top: 30%;
+    margin: auto;
+    width: 70%;
+    height: 60%;
+    border-radius: 1em;
+    border: none;
+
+}
+.ir:hover{
+    cursor: pointer;
+
+}
+
+.irTurmas{
+    margin: auto;
+    width: 120%;
+}
+
+.imgIrTurmas{
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+h6{
+    margin: auto;
+}
+
+.textIr{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    font-size: 1.5em;
+    margin: auto;
+    padding-top: 20%;
 }

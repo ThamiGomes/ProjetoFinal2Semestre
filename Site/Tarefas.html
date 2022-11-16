@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,6 +11,7 @@
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/tarefas.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/pullup_tarefas.css" />
     <link rel="stylesheet" href="css/preloader.css" type="text/css">
     <link rel="shortcut icon" href="img/seed.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -119,20 +123,35 @@
     </style>
 
     <!-- fim libras -->
+
+    
 <!--inicio tarefas-->
 <h1> Anote suas atividades a fazer aqui:</h1> 
 <h99>"estipule datas para uma melhor perfomance"</h99>
-<div class="container">
+<div class="container01">
   <div class="new-task-container">
     <input
       type="text" class="new-task-input" placeholder="Tarefa para ser feita..."
-    />
+    /><br>
+    <br><input
+      type="date" class="new-task-input1"/><br>
 
-    <button class="new-task-button">Adicionar</button>
+    <br><button class="new-task-button">Adicionar</button>
   </div>
 
   <div class="tasks-container"></div>
+
+  <br><button class="new-task-button "><a href="#openModal" >Open Modal</a>
+
+    <div id="openModal" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Popup</h2>
+        <p>Isto é uma popup toda bonitinha a funcionar apenas com CSS3.</p>
+      </div>
+    </div></button>
 </div>
+
 
 <script
   src="https://kit.fontawesome.com/f9e19193d6.js"
@@ -165,7 +184,7 @@
               </ul>
           </div>
 
-          <div class="footer-col" >
+          <div class="footer-col containerFoot" >
               <h4>Autor</h4>
               <ul>
                   <li><a>Rafaela</a></li>

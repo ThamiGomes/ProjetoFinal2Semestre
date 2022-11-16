@@ -1,7 +1,115 @@
+aux = 0;
+function caixa(){
+    var id_caixa = document.getElementById('opcoes');
+    id_caixa.classList.remove("caixa");
+    id_caixa.classList.add("abriropcoes");
+
+    console.log('teste');
+
+    string = '';
+
+    if(aux%2 ==0){
+        string='par';
+    }
+
+    if(aux%2 ==1){
+        string='ímpar';
+    }
+
+    console.log('teste2');
+    aux += 1;
+
+}
+
+function caixafechar(){
+    var id_caixa = document.getElementById('opcoes');
+
+    if (string == 'ímpar'){
+        console.log(string);
+
+        id_caixa.classList.remove("abriropcoes");
+        id_caixa.classList.add("caixa");
+
+    }
+    console.log('teste3');
+
+}
+
+aux2 = 0;
+function arquivo(){
+    var id_container = document.querySelectorAll('.container');
+    id_container.style.display = 'visible';
+
+
+    console.log('oi');
+
+    string = '';
+
+    if(aux2%2 ==0){
+        string='par';
+    }
+
+    if(aux2%2 ==1){
+        string='ímpar';
+    }
+
+    console.log('fdgdfg');
+    aux2 += 1;
+
+}
+
+function arquivofechar(){
+    var id_container = document.getElementById('container');
+
+    if (string == 'ímpar'){
+        console.log(string);
+
+        id_container.classList.remove("container2");
+        id_container.classList.add("container");
+
+    }
+    console.log('hhhh');
+
+}
+
+aux3 = 0;
+function pasta(){
+    var id_container3 = document.getElementById('container3');
+    id_container3.classList.remove("container");
+    id_container3.classList.add("container3");
+
+    console.log('oi');
+
+    string3 = '';
+
+    if(aux3%2 ==0){
+        string3='par';
+    }
+
+    if(aux3%2 ==1){
+        string3='ímpar';
+    }
+
+    console.log('teste2');
+    aux3 += 1;
+
+}
+
+function pastafechar(){
+    var id_container3 = document.getElementById('container3');
+
+    if (string3 == 'ímpar'){
+        console.log(string);
+
+        id_container3.classList.remove("container3");
+        id_container3.classList.add("container");
+
+    }
+    console.log('teste3');
+
+}
+
 const inputElement = document.querySelector(".new-task-input");
-
-const inputElement1 = document.querySelector(".new-task-input1");
-
 const addTaskButton = document.querySelector(".new-task-button");
 
 const tasksContainer = document.querySelector(".tasks-container");
@@ -21,8 +129,7 @@ const handleAddTask = () => {
   taskItemContainer.classList.add("task-item");
 
   const taskContent = document.createElement("p");
-  taskContent.innerText = inputElement.value + ' - ' + inputElement1.value;
-  
+  taskContent.innerText = inputElement.value;
 
   taskContent.addEventListener("click", () => handleClick(taskContent));
 
@@ -131,3 +238,4 @@ refreshTasksUsingLocalStorage();
 addTaskButton.addEventListener("click", () => handleAddTask());
 
 inputElement.addEventListener("change", () => handleInputChange());
+

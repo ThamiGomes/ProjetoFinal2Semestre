@@ -58,7 +58,7 @@ img.icone{
 
 
 div.principal{
-    height:655px;
+    height:745px;
     background-color: rgb(255, 255, 255);
     width: 1660px;
     position: relative;
@@ -114,207 +114,81 @@ div.principal{
 
   .quadro{
     overflow: scroll;
-    background-color: rgb(110, 97, 80);
-    width: 500px;
+    background-color: rgb(255, 255, 255);
+    width: 1500px;
+    margin-left: 90px;
+  }
+
+  button.quadro{
+    font-family: "Poppins";
+    color: #fff;
+    margin-top:40px;
+    margin-left: -1200px;
+    font-size: 17px;
+    font-weight: lighter;
+    background-color: #7b52bd;
+    width: 100px;
+    height: 50px;
+    border: rgba(0, 0, 0, 0);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+    overflow: hidden;
+
+  }
+
+  button.quadro:hover{
+    font-family: "Poppins";
+    color: rgb(0, 0, 0);
+    margin-top:40px;
+    margin-left: -1200px;
+    font-size: 17px;
+    font-weight: lighter;
+    width: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+    transition: 0.2s;
+    background-color: #c5afe9;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 7px 6px -3px, rgb(0, 0, 0) 0px 4px 6px -2px;   
+    cursor: pointer;
   }
 div.quadro{
-  overflow: scroll;
-  background-color: rgb(110, 97, 80);
-  width: 500px;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  width: 1500px;
+  margin: auto;
 }
 
-  .container {
-    border: 2px solid #ff823eb7;
-    background-color: #dddcdb;
-    border-radius: 35px;
-    padding: 10px;
-    margin:30px 0;
-    width: 600px;
-    margin-left: 200px;
-    position: absolute;
-    margin-top: 50;
-  }
-  .container2 {
-    border: 2px solid #ddddddb7;
-    background-color: rgb(243, 239, 239);
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px 0;
-    width: 500px;
-    margin-left: 200px;
-    position: absolute;
-    margin-top: 40px;
-  }
-  .img1{
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    margin-left: -650px;
-  }
-
-  img.img2{
-  margin-top:20px;
-  width: 220px;  
-  height: 50px;
-  }
-  .container2 p{
-    color: crimson;
-    font-family: "Poppins";
-    font-weight: bolder;
-    margin-top: -50px;
-  }
-
-  .container2 span{
-    color: rgb(0, 0, 0);
-    font-family: "Poppins";
-    font-weight: normal;
-    margin-top: 30px;
-  }
-  p.nome{
-    color: rgb(71, 71, 71);
-    font-weight: normal;
-    margin-left:-650px;
-    margin-top: 25px;
-    font-size: 12px;
-
-  }
-  .container3 {
-    border: 2px solid #ddddddb7;
-    background-color: rgb(243, 239, 239);
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px 0;
-    width: 500px;
-    margin-left: 200px;
-    position: absolute;
-    margin-top: 290px;
-  }
-  .container4 {
-    border: 2px solid #ddddddb7;
-    background-color: rgb(243, 239, 239);
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px 0;
-    width: 500px;
-    margin-left: 200px;
-    position: absolute;
-    margin-top: 420px;
-  }
-
-  .container5 {
-    border: 2px solid #ddddddb7;
-    background-color: rgb(243, 239, 239);
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px 0;
-    width: 500px;
-    margin-left: 200px;
-    position: absolute;
-    margin-top: 580px;
-  }
-
-  .container6 {
-    border: 2px solid #ddddddb7;
-    background-color: rgb(243, 239, 239);
-    border-radius: 5px;
-    padding: 10px;
-    margin: 720px 200px 100px 200px;
-    width: 500px;
-    position: absolute;
-  }
-  
-  
-  /* Clear floats */
-  .container::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  /* Style images */
-  .container img {
-    float: left;
-    max-width: 60px;
-    width: 100%;
-    margin-right: 20px;
-    border-radius: 50%;
-  }
-  
-  /* Style the right image */
-  .container img.right {
-    float: right;
-    margin-left: 20px;
-    margin-right:0;
-  }
-  
-  /* Style time text */
-  .time-right {
-    float: right;
-    color: #aaa;
-  }
-  
-  /* Style time text */
-  .time-left {
-    float: left;
-    color: rgb(187, 187, 187);
-  }
-    
-
-div.fundoinput{
+.caixa{
+  display: none;
+}
+.abriropcoes{
   background-color: #ffffff;
-  margin-top: 654px;
-  position: fixed;
-  left: 253px;
-  width: 1670px; /* Set a width if you like */
-  height: 89px;
-  box-shadow: 0 0 7px 0px #000;
-  clip-path: inset(0px -15px 0px -15px);
-
-
+  margin-left: 10px;
 }
-
-input.fundoinput{
-    width: 450px;
-    height: 25px;
-    position: relative;
-    margin-left: -1000px;
-    top: 30px;
-    border-radius: 0.5em;
-    border-color: black;
-    padding-left: 10px;
-    z-index: 2000 !important;
-
-}
-.enviar{
-  width: 45px;
-  height: 25px;
-  margin-top: 32px;
-  left: 600px;
-  background-color: #7b52bd;
-  position: absolute;
-  color: white;
-  border-radius: 100px;
-  border: none;
-
-}
-
-.enviar:hover{
-  width: 45px;
-  height: 25px;
-  margin-top: 35px;
-  left: 600px;
-  background-color: #cbbde2;
-  position: absolute;
-  transition: 0.3s;
-  color: black;
-}
-
-
-
 .container {
   border: 2px solid #fff;
   padding: 30px 40px;
-  width: 40%;
+  width: 800px;
+  min-width: 500px;
+  display: none;
+ 
+}
+.container2 {
+  border: 2px solid #fff;
+  padding: 30px 40px;
+  width: 800px;
+  min-width: 500px;
+  margin-top: 50px;
+
+ 
+}
+
+.container3 {
+  border: 2px solid #fff;
+  padding: 30px 40px;
+  width: 800px;
   min-width: 500px;
  
 }
@@ -324,7 +198,7 @@ input.fundoinput{
   padding: 30px 20px;
   border-radius: 5px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-  display: flex;
+  display: flex
  
 }
 
@@ -340,8 +214,9 @@ input.fundoinput{
 
 .new-task-container input:focus {
   outline: none;
-  border-color: #41b883;
+  border-color: #7b52bd;
 }
+
 
 .new-task-button {
   flex: 1;
@@ -350,7 +225,7 @@ input.fundoinput{
   height: 100%;
   font-size: 1rem;
   border: none;
-  background-color: #41b883;
+  background-color: #7b52bd;
   color: #fff;
   padding: 12px;
   margin-left: 12px;
@@ -359,11 +234,10 @@ input.fundoinput{
 }
 
 .tasks-container {
-  background-color: #fff;
-  padding: 30px 20px;
+  background-color: rgba(236, 236, 236, 0.548);
+  padding: 20px 30px;
   margin-top: 60px;
   border-radius: 10px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   width: 100%;
   
 }
@@ -378,7 +252,7 @@ input.fundoinput{
 }
 
 .task-item i {
-  background-color: #41b883;
+  background-color: #b1a1c7;
   color: #fff;
   padding: 12px;
   border-radius: 5px;
@@ -408,3 +282,136 @@ input.fundoinput{
   font-size: 3.5em;
   color:#717272
 }
+
+
+
+.placeNotiRecentes{
+    position: relative;
+    top: 50%;
+    left: 11%;
+    
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6% 0.4%;
+
+    width: 82%;
+    height: 80%;
+
+    background-color: #ffffff;
+}
+
+.iconFilter{
+    position: absolute;
+    left: 12%;
+    width: 1.4%;
+    padding: 0.2em;
+    border-radius: 50%;
+}
+.iconFilter:hover{
+    background-color: #e6e6e6;
+    cursor: pointer;
+    transition: 0.1s linear;
+}
+
+.lineAlert{
+    border: 1px solid black;
+}
+
+/*Noti1*/
+.noti1{
+    display: grid;
+    grid-template-columns: 10% 30% 30% 5% 10%;
+    grid-template-rows: 30% 50% 20%;
+    border-color: #6464649f;
+    width: 950px;
+    height: 70px;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-top: 50px;
+    background-color: #64646417;
+
+}
+.comp1-not1{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-column-end: 2;
+    
+    text-align: left;
+    text-indent: 2em;
+    margin: auto;
+    padding-top: 0.3em;
+}
+.comp2-not1{
+    grid-column-start: 2;
+    grid-row-start: 1;
+
+    font-size: 2em;
+    margin: auto;
+
+    padding-right: 6em;
+}
+.comp2-not1 h5{
+    font-family: "Poppins";
+    width: 500px;
+    margin-top: 20px;
+    margin-left: -150px;
+    font-weight: lighter;
+    padding-bottom: 10px;
+
+}
+
+.noti2{
+  display: grid;
+  grid-template-columns: 10% 30% 30% 5% 10%;
+  grid-template-rows: 30% 50% 20%;
+  border-color: #6464649f;
+  width: 950px;
+  height: 70px;
+  border-radius: 10px;
+  margin-left: -120px;
+  margin-top: 50px;
+  background-color: #64646417;
+  z-index: 2000 !important;
+
+}
+.comp3-not1{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+
+    text-indent: 5%;
+    font-size: 0.9em;
+}
+.comp4{
+    grid-column-start: 5;
+    grid-row-start: 2;
+}
+
+
+.imgPerfil{
+    padding-bottom: 10px;
+    width: 30%;
+    margin: 20px;
+    border-radius: 0%;
+    filter: drop-shadow(0em 0em 0.2em #fff);
+}
+
+.checar{
+    margin: auto;
+    width: 35%;
+    height: 100%;
+
+}
+.AvisoCheck:hover{
+    background-color: rgb(223, 223, 223);
+    transition: 0.1s linear;
+}
+.AvisoCheckChecked{
+    background-image: url(/Site/img/notificacoes/sinal-de-visto.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    transition: 0.1s linear;
+}
+
