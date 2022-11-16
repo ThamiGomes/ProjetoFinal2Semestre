@@ -109,12 +109,19 @@ function pastafechar(){
 
 }
 
-const inputElement = document.querySelector(".new-task-input");
-const addTaskButton = document.querySelector(".new-task-button");
+function aparecerfile(){
+  var texto = document.getElementById('texto').value;
+  document.getElementById('mostrarpasta').innerHTML = texto;
 
-const tasksContainer = document.querySelector(".tasks-container");
 
-const validateInput = () => inputElement.value.trim().length > 0;
+}
+
+const inputElement1 = document.querySelector(".new-task-input1");
+const addTaskButton1 = document.querySelector(".new-task-button1");
+
+const tasksContainer1 = document.querySelector(".tasks-container1");
+
+const validateInput = () => inputElement1.value.trim().length > 0;
 
 const handleAddTask = () => {
   const inputIsValid = validateInput();
@@ -122,14 +129,14 @@ const handleAddTask = () => {
   console.log(inputIsValid);
 
   if (!inputIsValid) {
-    return inputElement.classList.add("error");
+    return inputElement1.classList.add("error");
   }
 
   const taskItemContainer = document.createElement("div");
   taskItemContainer.classList.add("task-item");
 
   const taskContent = document.createElement("p");
-  taskContent.innerText = inputElement.value;
+  taskContent.innerText = inputElement1.value;
 
   taskContent.addEventListener("click", () => handleClick(taskContent));
 
@@ -138,13 +145,13 @@ const handleAddTask = () => {
   deleteItem.classList.add("fa-trash-alt");
 
   deleteItem.addEventListener("click", () =>
-    handleDeleteClick(taskItemContainer, taskContent)
+    handleDeleteClick(taskItemContainer1, taskContent)
   );
 
   taskItemContainer.appendChild(taskContent);
   taskItemContainer.appendChild(deleteItem);
 
-  tasksContainer.appendChild(taskItemContainer);
+  tasksContainer1.appendChild(taskItemContainer);
 
   inputElement.value = "";
 
@@ -152,7 +159,7 @@ const handleAddTask = () => {
 };
 
 const handleClick = (taskContent) => {
-  const tasks = tasksContainer.childNodes;
+  const tasks = tasksContainer1.childNodes;
 
   for (const task of tasks) {
     const currentTaskIsBeingClicked = task.firstChild.isSameNode(taskContent);
@@ -166,7 +173,7 @@ const handleClick = (taskContent) => {
 };
 
 const handleDeleteClick = (taskItemContainer, taskContent) => {
-  const tasks = tasksContainer.childNodes;
+  const tasks = tasksContainer1.childNodes;
 
   for (const task of tasks) {
     const currentTaskIsBeingClicked = task.firstChild.isSameNode(taskContent);
@@ -188,7 +195,7 @@ const handleInputChange = () => {
 };
 
 const updateLocalStorage = () => {
-  const tasks = tasksContainer.childNodes;
+  const tasks = tasksContainer1.childNodes;
 
   const localStorageTasks = [...tasks].map((task) => {
     const content = task.firstChild;
@@ -229,13 +236,13 @@ const refreshTasksUsingLocalStorage = () => {
     taskItemContainer.appendChild(taskContent);
     taskItemContainer.appendChild(deleteItem);
 
-    tasksContainer.appendChild(taskItemContainer);
+    tasksContainer1.appendChild(taskItemContainer);
   }
 };
 
 refreshTasksUsingLocalStorage();
 
-addTaskButton.addEventListener("click", () => handleAddTask());
+addTaskButton1.addEventListener("click", () => handleAddTask());
 
 inputElement.addEventListener("change", () => handleInputChange());
 
