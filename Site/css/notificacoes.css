@@ -345,7 +345,9 @@ p{
 }
 .ir:hover{
     cursor: pointer;
-
+    background-color: #a35802;
+    transition: 0.3s linear;
+    filter: invert(100%);
 }
 
 .irTurmas{
