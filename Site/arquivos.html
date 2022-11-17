@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/menu.css" />
-    <link rel="stylesheet" href="css/turmas.css" />
+    <link rel="stylesheet" href="css/arquivos.css" />
     <!-- FontAwesome 6.1.1 CDN -->
     <link
       rel="stylesheet"
@@ -20,7 +20,6 @@
   <body>
     <!--Header-->
     <header>
-      <div class="overlay"></div>
       <div class="nav">
         <ul class="tabs">
   
@@ -108,89 +107,124 @@
 
 
      <!--Conteudo pagina -->
-
-  <!--CARD-->
-  <div class="wrapper">
-    <h1> MEUS CURSOS </h1>
-    <div class="cols">
-          <div class="col" ontouchstart="this.classList.toggle('hover');">
-            <a href="dev.html">
-            <div class="container">
-              <div class="front" img style="background-image: url(); ">
-                <div class="inner">
-                  <p>Desenvolvimento de Sistemas</p>
-          
-                </div>
-              </div>
-              <div class="back">
-                <div class="inner">
-                <p> M2DSI</p>
-                <p>Professores: Mayara e Ailton</p>
-                <br>               
-                <p>2º termo - matutino</p>
-
-
-                </div>
-              </div>
-            </div>
-          </a>
-          </div>
-   
-          <div class="col" ontouchstart="this.classList.toggle('hover');">
-            <a href="index copy.html">  
-            <div class="container">
-            <div class="front" img style="background-image: url()">
-                <div class="inner">
-                  <p>AWS</p>
-                </div>
-              </div>
-              <div class="back">
-                <div class="inner">
-                  <p>Professora: Mayara</p>
-                  <br>               
-                  <p>40 horas</p>                </div>
-              </div>
-            </div>
-            </a>
-
-          </div>
-          <div class="col" ontouchstart="this.classList.toggle('hover');">
-            <a href="index copy.html">  
-            <div class="container">
-            <div class="front" img style="background-image: url(LuIMG/ParaBriz.jpg)">
-                <div class="inner">
-                  <p>Google Cloud</p>
-                </div>
-              </div>
-              <div class="back">
-                <div class="inner">
-                  <p>Professora: Mayara</p>
-                  <br>               
-                  <p>40 horas</p>                </div>
-              </div>
-            </div>
-          </a>  
-
-          </div>
-          
-            </div>
-          </div>
-        </div>
+    <!--Conteudo pagina -->
+    <div class="icone">
+      <div>
+       <img src="img/dev/devicone.png" class="icone">
+       <div class="vertical-menu">
+         <a href="#" class="active">Home</a>
+         <a href="#">PWFE</a>
+         <a href="#">PWBE 2</a>
+         <a href="#">IDM</a>
+         <a href="#">BANCO DE DADOS</a>
+       </div>
      </div>
+ 
+   <div class="principal">
+ 
+     <div class="horizontal-menu">
+       <a href="#" >Comunicados</a>
+       <a href="arquivos.html" class="active">Arquivos</a>
+     </div>
+ 
+   
+     <div class="quadro">
+      
+        <!--inicio tarefas-->
+        <button type="button" class="quadro" onclick="caixa(), caixafechar()"> NOVO +</button> 
+
+        <button type="button" class="quadro2" id="pasta" onclick="pasta(), pastafechar()"> pasta</button>   
+        <button type="button" class="quadro3" id="arquivo"  onclick="arquivo(), arquivofechar()"> arquivo</button> 
+
+
+            
+            
+            <div class="container" id="container1">
+              <div class="new-task-container">
+        
+                <input
+                type="file" class="new-task-input" placeholder="Tarefa para ser feita..."
+              />
+            
+                <button class="new-task-button">Adicionar</button>
+              </div>
+            
+              <div class="tasks-container"></div>
+
+              
+            </div>
+
+
+            <div class="container" id="container3">
+              <div class="new-task-container">
+        
+                <input
+                type="text" class="new-task-input" id="texto" placeholder="Tarefa para ser feita..."
+              />
+            
+                <button class="new-task-button">Adicionar</button>
+              </div>
+            
+              <div class="tasks-container"></div>
+
+              
+            </div>
+            <script src="js/arquivos.js"></script>
+
+
+  <div class="noti1">
+
+      <div class="comp1-not1">
+        <img class="imgPerfil" src="../Site/img/arquivos/folder-removebg-preview.png" alt="Maiara Ferreira de Paula">
+      </div>
+
+      <div class="comp2-not1">
+        <h5>Somativas</h5>
+      </div>
   
-    
-  
+  </div>
+
+  <div class="noti2">
+
+    <div class="comp1-not1">
+      <img class="imgPerfil" src="../Site/img/arquivos/folder-removebg-preview.png" alt="Maiara Ferreira de Paula">
+    </div>
+
+    <div class="comp2-not1">
+      <h5 id="mostrarpasta"></h5>
+    </div>
+
+</div>
+
+
+<!--fim tarefas-->
+
+       
+
+        
+
+        <script
+          src="https://kit.fontawesome.com/f9e19193d6.js"
+          crossorigin="anonymous"
+        ></script>
+<!--fim tarefas-->
+ 
+   </div>
      
-
-
-
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
-    integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script>
-  </body>
-  <script src="js/menu.js"></script>
-  <script src="js/index.js"></script>
-</html>
+   
+      
+   </div>
+ 
+ 
+   <script
+     src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+     integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"
+   ></script>
+   </body>
+   <script src="js/menu.js"></script>
+   <script src="js/index.js"></script>
+ 
+ </html>
+ 

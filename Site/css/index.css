@@ -14,7 +14,10 @@ body{
     font-family: 'Poppins';
 }
 
-
+h3{
+    font-size:20px ;
+    font-family: 'Poppins';
+}
 .sessao-home{
     display: flex;
     flex-direction: row;
@@ -272,11 +275,15 @@ img.chat{
 
 .cardPersoImg2{
     background-image: url(../img/Push\ notifications-cuate.png);
- 
 }
 
 .cardPersoImg3{
     background-image: url(../img/Collab-cuate.png);
+    background-image: url(../img/Collab-cuate.png);
+}
+
+.cardPersoImg3{
+    background-image: url(../img/Push\ notifications-cuate.png);
 }
 
 .nomePersonagem{
@@ -374,6 +381,7 @@ img.chat{
 
 
 /*Fim Comparação*/
+
 
 /*Button Back To Top*/
 #myBtn {

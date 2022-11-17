@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,6 +11,7 @@
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/tarefas.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/pullup_tarefas.css" />
     <link rel="stylesheet" href="css/preloader.css" type="text/css">
     <link rel="shortcut icon" href="img/seed.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,68 +32,68 @@
     <title>Home</title>
   </head>
   <body>
-    <!--Header-->
- <header>
-  <div class="overlay"></div>
-  <div class="nav">
-    <ul class="tabs">
-
-      <a href="index.html">
-      <li class="tabs-item tab tab-home tab-is-active">
-        <div class="tab-circle"></div>
-        <img class="roxinho" src="img/home.png">            
-        <span class="tab-home">Home</span>
-      </li>
+  <!--Header-->
+  <header>
+    <div class="overlay"></div>
+    <div class="nav">
+      <ul class="tabs">
+  
+        <a href="index.html">
+        <li class="tabs-item tab tab-home ">
+          <div class="tab-circle"></div>
+          <img class="roxinho" src="img/home.png">            
+          <span class="tab-home">Home</span>
+        </li>
+        </a>
+  
+        <a href="chat.html">
+        <li class="tabs-item tab tab-chat" style="height:55px ;">
+          <div class="tab-circle"></div>
+          <i class="fa fa-comment tab-icon"></i>
+        
+          <span class="chat">Chat</span>
+        </li>
+        </a>
+        <a href="Tarefas.html">
+        <li class="tabs-item tab tab-tarefas tab-is-active"  style="height:55px ;">
+          <div class="tab-circle"></div>
+          <i class="fa fa-clipboard tab-icon"></i>
+          <span class="tarefas">Tarefas</span>
+        </li>
       </a>
-
-      <a href="chat.html">
-      <li class="tabs-item tab tab-chat">
-        <div class="tab-circle"></div>
-        <i class="fa fa-comment tab-icon"></i>
-      
-        <span class="chat">Chat</span>
-      </li>
-      </a>
-      <a href="Tarefas.html">
-      <li class="tabs-item tab tab-tarefas">
-        <div class="tab-circle"></div>
-        <i class="fa fa-clipboard tab-icon"></i>
-        <span class="tarefas">Tarefas</span>
-      </li>
-    </a>
-
-    <a href="turmas.html">
-      <li class="tabs-item tab tab-sino ">
-        <div class="tab-circle"></div>
-        <img class="sino" src="img/sino.png">        
-        <span class="sino">Avisos</span>
-      </li>
-      </a>
-
-      <a href="chat.html">
-      <li class="tabs-item tab tab-calendar ">
-        <div class="tab-circle"></div>
-        <img class="calendario" src="img/calendar.png">            
-        <span class="calendario">Agenda</span>
-      
-      </li>
-      </a>
-
-
-      <a href="turmas.html">
-      <li class="tabs-item tab tab-team ">
-        <div class="tab-circle"></div>
-        <img class="roxinho" src="img/multiple-users-silhouette.png">        
-        <span class="tab-team">Equipes</span>
-      </li>
-      </a>
-      
-      <img class="perfil" src="img/girl.png">
-
-    </ul>
-  </div>
-
-  </header>
+  
+      <a href="notificacoes.html">
+        <li class="tabs-item tab tab-sino ">
+          <div class="tab-circle"></div>
+          <img class="sino" src="img/sino.png">        
+          <span class="sino">Avisos</span>
+        </li>
+        </a>
+  
+        <a href="chat.html">
+        <li class="tabs-item tab tab-calendar ">
+          <div class="tab-circle"></div>
+          <img class="calendario" src="img/calendar.png">            
+          <span class="calendario">Agenda</span>
+        
+        </li>
+        </a>
+  
+  
+        <a href="turmas.html">
+        <li class="tabs-item tab tab-team ">
+          <div class="tab-circle"></div>
+          <img class="roxinho" src="img/multiple-users-silhouette.png">        
+          <span class="tab-team">Equipes</span>
+        </li>
+        </a>
+        
+        <img class="perfil" src="img/girl.png">
+  
+      </ul>
+    </div>
+  
+    </header>
 
   <!--  fim Header-->
 
@@ -119,16 +123,20 @@
     </style>
 
     <!-- fim libras -->
+
+    
 <!--inicio tarefas-->
 <h1> Anote suas atividades a fazer aqui:</h1> 
 <h99>"estipule datas para uma melhor perfomance"</h99>
-<div class="container">
+<div class="container01">
   <div class="new-task-container">
     <input
       type="text" class="new-task-input" placeholder="Tarefa para ser feita..."
-    />
+    /><br>
+    <br><input
+      type="date" class="new-task-input1"/><br>
 
-    <button class="new-task-button">Adicionar</button>
+    <br><button class="new-task-button">Adicionar</button>
   </div>
 
 <<<<<<< HEAD
@@ -168,7 +176,18 @@
     
 =======
   <div class="tasks-container"></div>
+
+  <br><button class="new-task-button "><a href="#openModal" >Open Modal</a>
+
+    <div id="openModal" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Popup</h2>
+        <p>Isto é uma popup toda bonitinha a funcionar apenas com CSS3.</p>
+      </div>
+    </div></button>
 </div>
+
 
 <script
   src="https://kit.fontawesome.com/f9e19193d6.js"
@@ -179,7 +198,7 @@
 >>>>>>> 3e56ee25006b98ff25fedc29f81cb54c9266a458
  <!-- Footer -->
 
-<footer class="footer" data-anime="left">
+ <footer class="footer" data-anime="left">
   <hr>
   <div class="container">
       
@@ -202,10 +221,10 @@
               </ul>
           </div>
 
-          <div class="footer-col" >
+          <div class="footer-col containerFoot" >
               <h4>Autor</h4>
               <ul>
-                  <li><a>Aline Batista</a></li>
+                  <li><a>Rafaela</a></li>
               </ul>
           </div>
 
@@ -223,7 +242,6 @@
 
 </footer>
  <!--  Fim Footer -->
-
 
 
  <!-- Scripts -->

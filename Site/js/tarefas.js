@@ -1,4 +1,7 @@
 const inputElement = document.querySelector(".new-task-input");
+
+const inputElement1 = document.querySelector(".new-task-input1");
+
 const addTaskButton = document.querySelector(".new-task-button");
 
 const tasksContainer = document.querySelector(".tasks-container");
@@ -18,7 +21,8 @@ const handleAddTask = () => {
   taskItemContainer.classList.add("task-item");
 
   const taskContent = document.createElement("p");
-  taskContent.innerText = inputElement.value;
+  taskContent.innerText = inputElement.value + ' - ' + inputElement1.value;
+  
 
   taskContent.addEventListener("click", () => handleClick(taskContent));
 
