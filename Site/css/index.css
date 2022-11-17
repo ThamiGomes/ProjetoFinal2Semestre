@@ -14,7 +14,10 @@ body{
     font-family: 'Poppins';
 }
 
-
+h3{
+    font-size:20px ;
+    font-family: 'Poppins';
+}
 .sessao-home{
     display: flex;
     flex-direction: row;

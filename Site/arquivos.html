@@ -133,20 +133,13 @@
         <!--inicio tarefas-->
         <button type="button" class="quadro" onclick="caixa(), caixafechar()"> NOVO +</button> 
 
-            <select id="opcoes" class="caixa">
-              <option id="pasta" onclick="pasta(), pastafechar()">pasta</option>
-              <option id="arquivo"  onclick="arquivo(), arquivofechar()">arquivo</option>
-            </select>
-
-
         <button type="button" class="quadro2" id="pasta" onclick="pasta(), pastafechar()"> pasta</button>   
         <button type="button" class="quadro3" id="arquivo"  onclick="arquivo(), arquivofechar()"> arquivo</button> 
 
 
             
-
             
-            <div class="container" id="container">
+            <div class="container" id="container1">
               <div class="new-task-container">
         
                 <input
@@ -166,7 +159,7 @@
               <div class="new-task-container">
         
                 <input
-                type="text" class="new-task-input" placeholder="Tarefa para ser feita..."
+                type="text" class="new-task-input" id="texto" placeholder="Tarefa para ser feita..."
               />
             
                 <button class="new-task-button">Adicionar</button>
@@ -178,12 +171,8 @@
             </div>
             <script src="js/arquivos.js"></script>
 
-<script
-  src="https://kit.fontawesome.com/f9e19193d6.js"
-  crossorigin="anonymous"
-></script>
 
-  <div class="noti1 lineAlert">
+  <div class="noti1">
 
       <div class="comp1-not1">
         <img class="imgPerfil" src="../Site/img/arquivos/folder-removebg-preview.png" alt="Maiara Ferreira de Paula">
@@ -194,6 +183,18 @@
       </div>
   
   </div>
+
+  <div class="noti2">
+
+    <div class="comp1-not1">
+      <img class="imgPerfil" src="../Site/img/arquivos/folder-removebg-preview.png" alt="Maiara Ferreira de Paula">
+    </div>
+
+    <div class="comp2-not1">
+      <h5 id="mostrarpasta"></h5>
+    </div>
+
+</div>
 
 
 <!--fim tarefas-->
